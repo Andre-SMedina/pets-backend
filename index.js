@@ -20,6 +20,9 @@ const UserRoutes = require("./routes/UserRoutes");
 const PetRoutes = require("./routes/PetRoutes");
 app.use("/users", UserRoutes);
 app.use("/pets", PetRoutes);
+app.get("/", (req, res) => {
+  res.send("A API está funcionando.");
+});
 
 app.listen(port, () => {
   console.log(`porta ${port}`);
