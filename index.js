@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Solve CORS
 app.use(
-  cors({ credentials: true, origin: "https://meupetproject.herokuapp.com/" })
+  cors({ credentials: true, origin: "*" })
 );
 
 // Public folder for images
